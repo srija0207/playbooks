@@ -1,0 +1,12 @@
+
+---
+- name: Update web servers
+  hosts: web
+
+  tasks:
+  - name: Ensure web directory is created
+    file:
+      path: /home/centos/web-dir
+      state: directory
+...
+
