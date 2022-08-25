@@ -1,0 +1,11 @@
+---
+- name: update web servers
+  hosts: web
+
+  tasks:
+  - name: create web directory
+    file: 
+      path: /home/srija/web
+      state: directory
+...        
+          
