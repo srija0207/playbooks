@@ -1,0 +1,16 @@
+---
+- name: update web servers
+  hosts: web
+
+  tasks:
+  - name: create web directory
+    file: 
+      path: /home/srija/web
+      state: directory
+
+  - name: get url
+    get_url:
+      url: https://filesamples.com/samples/document/txt/sample3.txt
+      dest: /home/srija/web
+...        
+          
